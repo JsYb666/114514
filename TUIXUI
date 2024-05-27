@@ -97,7 +97,7 @@ Tab:AddParagraph("永久免费缝合脚本（群:809771141 b站:芜湖今天也�
 
 Tab:AddParagraph("持续云更新，如果发现不可用脚本请向作者反馈，加群加速更新")
 
-Tab:AddParagraph("更新时间:5月26日，更新内容：大更新，更新了很多脚本")
+Tab:AddParagraph("更新时间:5月27日，更新内容：Doors，监狱人生，BF")
 
 local Tab =Window:MakeTab({
 
@@ -543,6 +543,44 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PSXhuge/1/114514/jian
   	end
 })
 
+Tab:AddButton({
+	Name = "变车模型",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zLe3e4BS"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "变死神",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/ewv9bbRp"))()    
+  	end
+})
+
+
+
+Tab:AddButton({
+	Name = "变钢铁侠",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/7prijqYH"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "杀死全部",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
+  	end
+})
+
+
+Tab:AddButton({
+	Name = "无敌模式",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/LdTVujTA"))()
+  	end
+})
+
 local Section = Tab:AddSection({
 	Name = "传送"
 })
@@ -979,6 +1017,46 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/ma
 end
 })
 
+Tab:AddButton({
+    Name = "XD",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+	
+end
+})
+
+Tab:AddButton({
+  Name = "无卡密陈",
+  Callback = function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\89\83\108\111\110\47\82\65\87\45\46\46\97\45\115\99\114\105\112\116\47\109\97\105\110\47\37\69\57\37\57\57\37\56\56\68\79\79\82\83\50\46\48\77\79\79\78\37\69\54\37\66\55\37\66\55\37\69\54\37\66\55\37\56\54\34\41\41\40\41")()
+
+  end
+})
+
+local Section = Tab:AddSection({
+	Name = "功能"
+})
+
+Tab:AddButton({  
+    Name = "十字架",
+	Callback = function()
+	_G.Uses = 99999999999
+_G.Range = 999
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))() --no deivid-- --execute this instead--
+     end
+})
+
+Tab:AddButton({
+	Name = "紫色手电筒",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight%20Script.lua"))()
+    end
+})
+
+
+
 local Tab = Window:MakeTab({
 	Name = "伐木",
 	Icon = "rbxassetid://7733779610",
@@ -1026,6 +1104,10 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
     end
+})
+
+local Section = Tab:AddSection({
+	Name = "传送"
 })
 
 Tab:AddButton({
@@ -1099,6 +1181,10 @@ Tab:AddButton({
   Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
   end
+})
+
+local Section = Tab:AddSection({
+	Name = "功能"
 })
 
 Tab:AddButton({
@@ -1195,6 +1281,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hu
   end
 })
 
+Tab:AddButton({
+	Name = "7",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/MaxFast"))()   
+  	end    
+})
+
     local Tab = Window:MakeTab({
 	Name = "最强战场",
 	Icon = "rbxassetid://7733779610",
@@ -1284,7 +1377,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/script
 })
 
 Tab:AddButton({
-  Name = "2",
+  Name = "3",
   Callback = function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
   end
