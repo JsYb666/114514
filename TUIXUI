@@ -1519,12 +1519,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unkn
   end
 })
 
-Auto = Window:Tab("退休")
-
-Auto:Toggle("击退", false, function(Value)
-    Parry = Value
-end)
-
 local player = Window:MakeTab({
 	Name = "超级大力士",
 	Icon = "rbxassetid://7733779610",
