@@ -1,6 +1,6 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI.lua"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/v9Pdp6kx"))()
 
-local Window = Library:Window("zzl", "力量传奇")
+local Window = Library:Window("力量传奇")
 
 Player = Window:Tab("主要功能")
 
