@@ -58,17 +58,15 @@ Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/v9Pdp6kx"))()
 local Window = OrionLib:MakeWindow({Name = "武士脚本", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用武士脚本", ConfigFolder = "欢迎使用武士脚本"})
 
-local Tab = Window:MakeTab({
+local player = Window:MakeTab({
 	Name = "力量传奇",
-	Icon = "",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 
-Tab:AddButton({
-
-Player = Window:Tab("主要功能")
-
-function c()
+player:AddButton({ 
+	Name = "功能",
+	Callback = function()
 	for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 		if
 			v.ClassName == "Tool" and v.Name == "Handstands" or v.Name == "Situps" or v.Name == "Pushups" or
@@ -405,3 +403,4 @@ Bugpet:Toggle("5M耐力石头自动打", false, function(Value)
 		end
 		)
 end)
+})
