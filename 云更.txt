@@ -97,7 +97,7 @@ Tab:AddParagraph("永久免费缝合脚本（群:809771141 b站:芜湖今天也�
 
 Tab:AddParagraph("持续云更新，如果发现不可用脚本请向作者反馈，加群加速更新")
 
-Tab:AddParagraph("更新时间:6月6日，更新内容：脚本维护，基本全是混音FNF，Doors，伐木")
+Tab:AddParagraph("更新时间:6月20日，更新内容：龙之冒险，索里亚世界，刀刃球增加，健身联盟 /n 我最近在搞付费没时间更新请大家凉解")
 
 local Tab =Window:MakeTab({
 
@@ -1497,7 +1497,7 @@ local player = Window:MakeTab({
 })
 
 player:AddButton({ 
-	Name = "1(需卡密)",
+	Name = "1(需卡密)[推荐]",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/3345-c-a-t-s-u-s/New-C4-Remote.lua/main/BetaTest/Bladeball15m.html'))()
   	end
@@ -1525,10 +1525,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/HKLua/Balls/main/Dawn
 })
 
 player:AddButton({
-  Name = "5",
+  Name = "5[更新]",
   Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
-  end
+loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
+end
 })
 
 local player = Window:MakeTab({
@@ -2231,5 +2231,44 @@ Tab:AddButton({
   Name = "1",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/BasicallyFNF", true))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "索纳里亚世界",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "1",
+  Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Mangnex/Creature-of-Sonaria-Mobile/main/Temporal.lua'))()",
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "龙之冒险",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "1",
+  Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Mangnex/Creature-of-Sonaria-Mobile/main/Temporal.lua'))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "健身联盟",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "1",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/GymLeague", true))()
   end
 })
