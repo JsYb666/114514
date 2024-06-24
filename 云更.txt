@@ -18,16 +18,6 @@ CoreGui:SetCore("SendNotification", {
     Duration = 8, 
 })
 
-                  --114514--
-                  --114514--
-                  
-                  
-   --群:        809771141                :群--
-   --烦💩了    八零九七七一一四一    烦💩了--
-                  
-                  --114514--
-                  --114514--
-
 print("反挂机开启")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -363,8 +353,6 @@ Tab:AddButton({
 
 })
 
-
-
 Tab:AddButton({
   Name = "旋转",
   Callback = function()
@@ -621,6 +609,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/T
   end
 })
 
+local Section = Tab:AddSection({
+	Name = "功能"
+})
+
 Tab:AddButton({
 	Name = "手里剑秒杀",
 	Callback = function()
@@ -641,8 +633,6 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://pastebin.com/ewv9bbRp"))()    
   	end
 })
-
-
 
 Tab:AddButton({
 	Name = "变钢铁侠",
@@ -668,9 +658,6 @@ Tab:AddButton({
 
 local Section = Tab:AddSection({
 	Name = "传送"
-})
-local Section = Tab:AddSection({
-	Name = "传送位置"
 })
 
 Tab:AddButton({
@@ -2437,7 +2424,7 @@ Tab:AddButton({
 
 loadstring(game:HttpGet("https://pastebin.com/raw/A6z5Ba66"))()
 
-end
+  end
 
 })
 
