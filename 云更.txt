@@ -95,7 +95,7 @@ Tab:AddParagraph("永久免费缝合脚本（群:809771141 b站:芜湖今天也�
 
 Tab:AddParagraph("持续云更新，如果发现不可用脚本请向作者反馈，加群加速更新")
 
-Tab:AddParagraph("更新时间:6月23日，更新内容：龙之冒险，索里亚世界，刀刃球，健身联盟 /n 我最近在搞付费没时间更新请大家凉解 /n 通用功能，EVADE，幸运方块，MM2，一路向西，宠物模拟器Ⅹ")
+Tab:AddParagraph("更新时间:6月25日，更新内容:通用，一路向西，宠物模拟器X，MM2，幸运方块，EVADE")
 
 local Tab =Window:MakeTab({
 
@@ -291,6 +291,27 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "飞行_1",
+	Callback = function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+  	end
+})
+
+Tab:AddButton({
+	Name = "退休飞行",
+	Callback = function()
+
+  	end
+})
+
+Tab:AddButton({
 	Name = "无限跳",
     Default = false,
 	Callback = function(Value)
@@ -299,194 +320,10 @@ loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
 })
 
 Tab:AddButton({
-	Name = "FPS(变流畅)",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-  Name = "HUA 光影",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "光影_2",
-  Default = false,
-  Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-  end
-})
-
-Tab:AddButton({
-	Name = "高画质",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
-end
-})    
-
-Tab:AddButton({
-	Name = "飞行",
-	Callback = function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
-  	end
-})
-
-Tab:AddButton({
-	Name = "退休飞行[推荐🤓]",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/114514/main/%E9%A3%9E%E8%A1%8C"))()
-  	end
-})
-
-Tab:AddButton({
-
-	Name = "Syn UI",
-
-	Callback = function()
-
-     loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
-
-  	end    
-
-})
-
-Tab:AddButton({
-  Name = "旋转",
-  Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  end
-})
-
-Tab:AddButton({
-	Name = "旋转_2",
-	Callback = function()
-      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  	end
-})
-
-Tab:AddToggle({
-	Name = "夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
-})
-
-Tab:AddButton({
-
-	Name = "黑客脚本",
-
-	Callback = function()
-
-loadstring(game: HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
-
-    end
-
-})
-
-Tab:AddButton({
-
-	Name = "铁拳",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
-
-    end
-
-})
-
-Tab:AddButton({
-
-    Name="回满血部分服务器无效",
-
-    Callback=function()
-
-        game.Players.LocalPlayer.Character.Humanoid.Health=10000
-
-    end
-
-})
-
-
-Tab:AddButton({
-
-	Name = "防止掉线（反挂机）",
-
-	Callback = function()
-
-	print("Anti Afk On")
-
-		local vu = game:GetService("VirtualUser")
-
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-
-		   wait(1)
-
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-
-		end)
-
-  	end
-
-})
-
-Tab:AddButton({
-	Name = "飞车",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
-	end
-})
-
-Tab:AddButton({
     Name = "动作",
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
     end
-})
-
-Tab:AddButton({
-	Name = "电脑键盘",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "踏空行走",
-	Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-	end
-})
-
-Tab:AddButton({
-	Name = "指令",
-	Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "飞车",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/GGDcLKsg"))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "点击传送工具",
-	Callback = function()
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
-	end
 })
 
 Tab:AddToggle({
@@ -572,6 +409,13 @@ end)
 })
 
 Tab:AddButton({
+	Name = "玩家进入提示",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+  	end
+})
+
+Tab:AddButton({
 	Name = "传送玩家",
 	Callback = function()
       	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
@@ -579,10 +423,120 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "玩家进入提示",
+	Name = "FPS(变流畅)",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/FPS-X-GUI/main/FPS_X.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+  Name = "HUA 光影",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "光影_2",
+  Default = false,
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  end
+})
+
+Tab:AddButton({
+	Name = "超高画质",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end
+})    
+
+Tab:AddButton({
+  Name = "旋转",
+  Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+  end
+})
+
+Tab:AddButton({
+	Name = "转起来",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
   	end
+})
+
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
+
+Tab:AddButton({
+	Name = "电脑键盘",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "踏空行走",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+	end
+})
+
+Tab:AddButton({
+	Name = "指令",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "点击传送工具",
+	Callback = function()
+mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+	end
+})
+
+Tab:AddButton({
+  Name = "Syn UI",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "黑客脚本",
+  Callback = function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/BirthScripts/Scripts/main/c00l.lua"))()
+  end
+})
+
+Tab:AddButton({
+  Name = "防止掉线（反挂机）",
+  Callback = function()
+print("Anti Afk On")
+
+		local vu = game:GetService("VirtualUser")
+
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+		   wait(1)
+
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+		end)
+
+  end
 })
 
 local Tab = Window:MakeTab({
@@ -609,10 +563,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/T
   end
 })
 
-local Section = Tab:AddSection({
-	Name = "功能"
-})
-
 Tab:AddButton({
 	Name = "手里剑秒杀",
 	Callback = function()
@@ -633,6 +583,8 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://pastebin.com/ewv9bbRp"))()    
   	end
 })
+
+
 
 Tab:AddButton({
 	Name = "变钢铁侠",
@@ -658,6 +610,9 @@ Tab:AddButton({
 
 local Section = Tab:AddSection({
 	Name = "传送"
+})
+local Section = Tab:AddSection({
+	Name = "传送位置"
 })
 
 Tab:AddButton({
@@ -1279,31 +1234,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-  Name = "卡宠_2",
-  Callback = function()
-	wait(0.5)local ba=Instance.new("ScreenGui")
-local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
-local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
-ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
-ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
-ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
-ca.Font=Enum.Font.SourceSansSemibold;ca.Text="自动卡宠脚本"ca.TextColor3=Color3.new(0,1,1)
-ca.TextSize=22;da.Parent=ca
-da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
-da.Size=UDim2.new(0,304,0,107)_b.Parent=da
-_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
-_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="作者莫羽"
-_b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
-ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
-ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="自动卡宠:已开启 "
-ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
-game:service'Players'.LocalPlayer.Idled:connect(function()
-bb:CaptureController()bb:ClickButton2(Vector2.new())
-ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
-  end
-})
-
-Tab:AddButton({
 	Name = "自动重生和自动刷等级",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/T9wTL150"))()        
@@ -1513,15 +1443,10 @@ loadstring(game:GetObjects("rbxassetid://773377961010144323913")[1].Source)()
 })
 
 Tab:AddButton({
-
-	Name = "3",
-
-	Callback = function()
-
+  Name = "3",
+  Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/pHN96bvq"))()
-
-end
-
+  end
 })
 
 local Tab = Window:MakeTab({
@@ -1667,15 +1592,10 @@ player:AddButton({
 })
 
 Tab:AddButton({
-
-	Name = "2",
-
-	Callback = function()
-
+  Name = "2",
+  Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/QS5CcYdU"))()
-
-end
-
+  end
 })
 
 local player = Window:MakeTab({
@@ -1692,15 +1612,10 @@ player:AddButton({
 })
 
 Tab:AddButton({
-
-	Name = "2",
-
-	Callback = function()
-
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
-
-  	end    
-
+  Name = "2",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+  end
 })
 
 local player = Window:MakeTab({
@@ -2407,43 +2322,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/mai
 })
 
 local Tab = Window:MakeTab({
-
-    Name = "MM2",
-
-	Icon = "rbxassetid://7733779610",
-
-	PremiumOnly = false
-
-})
-
-Tab:AddButton({
-
-	Name = "1",
-
-	Callback = function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/A6z5Ba66"))()
-
-  end
-
-})
-
-local Tab = Window:MakeTab({
 	Name = "宠物模拟器X",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-
-	Name = "1",
-
-	Callback = function()
-
-     loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
-
-  	end    
-
+  Name = "1",
+  Callback = function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+  end
 })
 
+local Tab = Window:MakeTab({
+	Name = "MM2",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
 
+Tab:AddButton({
+  Name = "1",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/A6z5Ba66"))()
+  end
+})
