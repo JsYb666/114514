@@ -97,7 +97,7 @@ Tab:AddParagraph("永久免费缝合脚本（群:809771141 b站:芜湖今天也�
 
 Tab:AddParagraph("持续云更新，如果发现不可用脚本请向作者反馈，加群加速更新")
 
-Tab:AddParagraph("更新时间:6月6日，更新内容：脚本维护，基本全是混音FNF，Doors，伐木")
+Tab:AddParagraph("更新时间:6月27日，更新内容：脚本退回上一版本我会尽快大更新")
 
 local Tab =Window:MakeTab({
 
