@@ -573,11 +573,12 @@ Tab:AddButton({
   	end
 })
 
-Tab:AddButton({
-	Name = "杀死全部",
-	Callback = function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
-  	end
+Tab:AddToggle({
+	Name = "杀所有人",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
+	end
 })
 
 
@@ -590,9 +591,6 @@ Tab:AddButton({
 
 local Section = Tab:AddSection({
 	Name = "传送"
-})
-local Section = Tab:AddSection({
-	Name = "传送位置"
 })
 
 Tab:AddButton({
