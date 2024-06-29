@@ -558,30 +558,18 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "变死神",
-	Callback = function()
-	loadstring(game:HttpGet("https://pastebin.com/ewv9bbRp"))()    
-  	end
+  Name = "变钢铁侠",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7prijqYH"))()
+  end
 })
-
-
 
 Tab:AddButton({
-	Name = "变钢铁侠",
-	Callback = function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/7prijqYH"))()
-  	end
+  Name = "杀所有人(不可关)",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
+  end
 })
-
-Tab:AddToggle({
-	Name = "杀所有人",
-	Default = false,
-	Callback = function(Value)
-         if Value then
-		loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
-	end
-})
-
 
 Tab:AddButton({
 	Name = "无敌模式",
