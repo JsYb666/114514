@@ -97,7 +97,7 @@ Tab:AddParagraph("永久免费缝合脚本（群:809771141 b站:芜湖今天也�
 
 Tab:AddParagraph("持续云更新，如果发现不可用脚本请向作者反馈，加群加速更新")
 
-Tab:AddParagraph("更新时间:6月27日，更新内容：脚本退回上一版本我会尽快大更新")
+Tab:AddParagraph("更新时间:7月11日，更新内容：通用，其它脚本")
 
 local Tab =Window:MakeTab({
 
@@ -280,7 +280,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfai
 })
 
 Tab:AddButton({
-	Name = "白(收费)",
+	Name = "白(付费)",
 	Callback = function()
 _G["白脚本作者修狗"]="xdjhadgdsrfcyefjhsadcctyseyr6432478rudghfvszhxcaheey"loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/baijiaobengV2.0beta/main/%E7%99%BD%E8%84%9A%E6%9C%ACbeta'),true))() 
   	end
@@ -298,6 +298,123 @@ local Tab = Window:MakeTab({
 	Name = "通用功能",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "跳跃高度设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "移动速度设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "重力设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.Gravity = Value
+	end
+})
+
+Tab:AddButton({
+  Name = "退休飞行",
+  Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/dt2BTaKU"))()
+  end
+})
+
+Tab:AddButton({
+	Name = "飞行_2",
+	Callback = function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+  	end
+})
+
+Tab:AddButton({
+	Name = "无限跳",
+    Default = false,
+	Callback = function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+	end
+})
+
+Tab:AddToggle({
+	Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
+})
+
+Tab:AddButton({
+	Name = "传送玩家",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "玩家进入提示",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+  	end
+})
+
+Tab:AddToggle({
+	Name = "穿墙",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+	end
 })
 
 Tab:AddButton({
@@ -334,13 +451,6 @@ Tab:AddButton({
   Callback = function()
     loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
   end
-})
-
-Tab:AddButton({
-	Name = "转起来",
-	Callback = function()
-      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  	end
 })
 
 Tab:AddToggle({
@@ -402,156 +512,6 @@ Tab:AddButton({
 	Callback = function()
 mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
 	end
-})
-
-local Tab= Window:MakeTab({
-	Name = "玩家",
-	Icon = "rbxassetid://7733779610",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "无限跳",
-    Default = false,
-	Callback = function(Value)
-loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
-	end
-})
-
-Tab:AddTextbox({
-	Name = "跳跃高度设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
-})
-
-Tab:AddTextbox({
-	Name = "移动速度设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end
-})
-
-Tab:AddTextbox({
-	Name = "重力设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Workspace.Gravity = Value
-	end
-})
-
-Tab:AddToggle({
-	Name = "穿墙",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    Noclip = true
-		    Stepped = game.RunService.Stepped:Connect(function()
-			    if Noclip == true then
-				    for a, b in pairs(game.Workspace:GetChildren()) do
-                        if b.Name == game.Players.LocalPlayer.Name then
-                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
-                                if v:IsA("BasePart") then
-                                    v.CanCollide = false
-                                end
-                            end
-                        end
-                    end
-			    else
-				    Stepped:Disconnect()
-			    end
-		    end)
-	    else
-		    Noclip = false
-	    end
-	end
-})
-
-Tab:AddButton({
-  Name = "退休飞行",
-  Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/dt2BTaKU"))()
-  end
-})
-
-Tab:AddButton({
-	Name = "飞行",
-	Callback = function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
-  	end
-})
-
-Tab:AddButton({
-	Name = "透视",
-	Callback = function()
-      	local FillColor = Color3.fromRGB(175,25,255)
-local DepthMode = "AlwaysOnTop"
-local FillTransparency = 0.5
-local OutlineColor = Color3.fromRGB(255,255,255)
-local OutlineTransparency = 0
-
-local CoreGui = game:FindService("CoreGui")
-local Players = game:FindService("Players")
-local lp = Players.LocalPlayer
-local connections = {}
-
-local Storage = Instance.new("Folder")
-Storage.Parent = CoreGui
-Storage.Name = "Highlight_Storage"
-
-local function Highlight(plr)
-    local Highlight = Instance.new("Highlight")
-    Highlight.Name = plr.Name
-    Highlight.FillColor = FillColor
-    Highlight.DepthMode = DepthMode
-    Highlight.FillTransparency = FillTransparency
-    Highlight.OutlineColor = OutlineColor
-    Highlight.OutlineTransparency = 0
-    Highlight.Parent = Storage
-    
-    local plrchar = plr.Character
-    if plrchar then
-        Highlight.Adornee = plrchar
-    end
-
-    connections[plr] = plr.CharacterAdded:Connect(function(char)
-        Highlight.Adornee = char
-    end)
-end
-
-Players.PlayerAdded:Connect(Highlight)
-for i,v in next, Players:GetPlayers() do
-    Highlight(v)
-end
-
-Players.PlayerRemoving:Connect(function(plr)
-    local plrname = plr.Name
-    if Storage[plrname] then
-        Storage[plrname]:Destroy()
-    end
-    if connections[plr] then
-        connections[plr]:Disconnect()
-    end
-end)
-  	end
-})
-
-Tab:AddButton({
-	Name = "传送玩家",
-	Callback = function()
-      	loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
-  	end
-})
-
-Tab:AddButton({
-	Name = "玩家进入提示",
-	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
-  	end
 })
 
 local Tab = Window:MakeTab({
